@@ -1,0 +1,13 @@
+NEW RECIPE
+
+<%= form_for @ingredient, url: {action: "create"} do |ingredient| %>
+  <div>
+    <label>Name</label>
+    <%= ingredient.text_field :name %>
+  </div>
+  <div>
+    <label>Preparation</label>
+    <%= ingredient.text_field :preparation %>
+  </div>
+  <%= ingredient.submit "Save" %>
+<% end %>

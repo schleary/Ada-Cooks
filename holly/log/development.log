@@ -30,3 +30,1202 @@ Started GET "/" for 127.0.0.1 at 2014-11-05 09:14:12 -0800
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
 Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 14:50:31 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/railties-4.1.5/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 211ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 17:00:44 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 17:02:07 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 17:02:08 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 198ms (Views: 197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:02 -0800
+
+
+Started GET "/new" for 127.0.0.1 at 2014-11-06 11:24:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hollyleary/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/hollyleary/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/hollyleary/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.1ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+Processing by RecipesController#new as HTML
+  Rendered recipes/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 32.3ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:21 -0800
+
+
+Started GET "/recipe/new" for 127.0.0.1 at 2014-11-06 11:24:28 -0800
+
+ActionController::RoutingError (No route matches [GET] "/recipe/new"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hollyleary/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/hollyleary/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/hollyleary/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.4ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (17.9ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 61ms (Views: 43.3ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:24:55 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:25:04 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Pancakes"}, "commit"=>"Save changes"}
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  app/controllers/recipes_controller.rb:58:in `recipe_params'
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.5ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:27:40 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:27:45 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Pancakes"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:33:14 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:15 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:33:18 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"hol"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:33:29 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:37:33 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:38:18 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 46ms (Views: 41.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:38:19 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:39:18 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:39 -0800
+
+
+Started GET "/ingredients/new" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:44:44 -0800
+
+
+Started POST "/ingredients" for 127.0.0.1 at 2014-11-06 11:44:58 -0800
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "ingredient"=>{"name"=>"Carrots", "preparation"=>"Chopped"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/ingredients_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.2ms)
+
+
+Started POST "/ingredients" for 127.0.0.1 at 2014-11-06 11:45:44 -0800
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "ingredient"=>{"name"=>"Carrots", "preparation"=>"Chopped"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 3ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/ingredients_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/ingredients/new" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:45:58 -0800
+
+
+Started POST "/ingredients" for 127.0.0.1 at 2014-11-06 11:46:07 -0800
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "ingredient"=>{"name"=>"Carrots", "preparation"=>"Chopped"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/ingredients_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/ingredients/new" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:47:07 -0800
+
+
+Started POST "/ingredients" for 127.0.0.1 at 2014-11-06 11:47:17 -0800
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "ingredient"=>{"name"=>"banana", "preparation"=>"mooshed"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (19.8ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "preparation", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-11-06 19:47:17.256008"], ["name", "banana"], ["preparation", "mooshed"], ["updated_at", "2014-11-06 19:47:17.256008"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+Redirected to 
+Completed 500 Internal Server Error in 46ms
+
+NoMethodError (undefined method `ingredient_url' for #<IngredientsController:0x007f98a2b3c3c8>):
+  app/controllers/ingredients_controller.rb:14:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/ingredients/new" for 127.0.0.1 at 2014-11-06 11:48:06 -0800
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:07 -0800
+
+
+Started POST "/ingredients" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "ingredient"=>{"name"=>"Carrots", "preparation"=>"Mashed"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "preparation", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-06 19:48:13.148507"], ["name", "Carrots"], ["preparation", "Mashed"], ["updated_at", "2014-11-06 19:48:13.148507"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/ingredients
+Completed 302 Found in 10ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/ingredients" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+Processing by IngredientsController#index as HTML
+  Rendered ingredients/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:13 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (6.4ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 46ms (Views: 35.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:48:22 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:48:31 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Fava Bean Salad", "ingredients"=>["1", "2"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:51:46 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:51:49 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Stuff"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.3ms)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:51:56 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Stuff", "ingredients"=>["1", "2"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 11:58:32 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 11:58:36 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Food", "ingredients"=>["1"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:02:27 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Food", "ingredients"=>["1"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 12:06:10 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:06:18 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Stew", "ingredients"=>["1"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:20:48 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Stew", "ingredients"=>["1"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:20:58 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Stew", "ingredients"=>["1"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 81ms (Views: 70.8ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 12:22:02 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:22:12 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Stuff", "ingredients"=>["1"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant RecipesController::RecipeForm):
+  app/controllers/recipes_controller.rb:12:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 12:24:24 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 90ms (Views: 80.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 12:24:25 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:24:34 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Things", "ingredients"=>["1", "2"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 7ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: name):
+  app/forms/recipe_form.rb:12:in `save'
+  app/controllers/recipes_controller.rb:14:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 43ms (Views: 35.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 12:25:42 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:25:53 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Fuff", "ingredients"=>["1", "2"]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 5ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: name):
+  app/forms/recipe_form.rb:12:in `save'
+  app/controllers/recipes_controller.rb:14:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 12:26:25 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 68ms (Views: 62.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 12:26:26 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:26:30 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Fuff", "ingredients"=>["1", "2"]}, "commit"=>"Save changes"}
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.7ms)[0m  INSERT INTO "recipes" ("created_at", "title", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-11-06 20:26:30.391910"], ["title", "Fuff"], ["updated_at", "2014-11-06 20:26:30.391910"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (17.3ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-11-06 20:26:30.422816"], ["ingredient_id", 1], ["recipe_id", 1], ["updated_at", "2014-11-06 20:26:30.422816"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-06 20:26:30.442183"], ["ingredient_id", 2], ["recipe_id", 1], ["updated_at", "2014-11-06 20:26:30.442183"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 66ms
+
+NoMethodError (undefined method `recipe_path' for #<RecipesController:0x007fc078012828>):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 12:27:10 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe_form"=>{"title"=>"Fuff", "ingredients"=>["1", "2"]}, "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "title", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-06 20:27:10.983128"], ["title", "Fuff"], ["updated_at", "2014-11-06 20:27:10.983128"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-06 20:27:10.993348"], ["ingredient_id", 1], ["recipe_id", 2], ["updated_at", "2014-11-06 20:27:10.993348"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-11-06 20:27:10.995472"], ["ingredient_id", 2], ["recipe_id", 2], ["updated_at", "2014-11-06 20:27:10.995472"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.2
+Completed 302 Found in 28ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/recipes.2" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+Processing by RecipesController#index as 
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/recipess.css?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 12:27:11 -0800
