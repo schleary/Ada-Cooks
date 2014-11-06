@@ -1,1 +1,9 @@
 REC SHOW
+
+<h4><%= @recipe.title %></h4>
+
+<img src="<%= @recipe.image %>" height = 100px>
+<%= @recipe.directions %>
+
+<%= link_to "Edit", recipes_edit_path(@recipe), class:"btn btn-default" %> &nbsp
+<%= link_to "DELETE", recipes_destroy_path(@recipe), class: "btn btn-danger" %>

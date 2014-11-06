@@ -1,1 +1,14 @@
 ING INDEX
+
+<% if @ingredients.any?%>
+  <% @ingredients.each do |ingredient| %>
+    <h2><%= link_to ingredient.name, ingredients_show_path(ingredient) %>
+    <small><%= ingredient.preparation %></small>
+    </h2>
+  <% end %>
+    </br>
+  <%= link_to "View More ingredients", ingredients_path %>
+  <% else %>
+    Oops... There are not ingredients yet,
+    <%= link_to "add one.", ingredients_new_path %>
+<% end %>
