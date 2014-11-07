@@ -1,9 +1,7 @@
-ING SHOW
-
+<h1>Ingredient</h1>
 
 <h4><%= @ingredient.name %></h4>
 
-<%= @ingredient.preparation %>
 
-<%= link_to "Edit", recipes_edit_path(@recipe), class:"btn btn-default" %> &nbsp
-<%= link_to "DELETE", recipes_destroy_path(@recipe), class: "btn btn-danger" %>
+<%= link_to "Edit", ingredients_edit_path(@ingredient), class:"btn btn-default" %> &nbsp
+<%= link_to "DELETE", ingredients_destroy_path(@ingredient), class: "btn btn-danger" %>

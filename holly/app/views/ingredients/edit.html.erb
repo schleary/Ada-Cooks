@@ -1,2 +1,9 @@
-<h1>Ingredients#edit</h1>
-<p>Find me in app/views/ingredients/edit.html.erb</p>
+<h2>Edit Ingredient</h2>
+
+<%= form_for @ingredient, url: {action: "update"} do |ingredient| %>
+  <div class="form-group">
+    <label>Name</label>
+    <%= ingredient.text_field :name, class: "form-control" %>
+  </div>
+  <%= ingredient.submit "Save", class: "btn btn-default" %>
+<% end %>

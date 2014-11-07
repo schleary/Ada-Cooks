@@ -28,7 +28,7 @@ class RecipesController < ApplicationController
 
   def update
     @recipe = Recipe.find(params[:id])
-    if @recipe.update(find_params)
+    if @recipe.update(recipe_params)
       redirect_to recipes_show_path(@recipe)
     else
       render 'edit'

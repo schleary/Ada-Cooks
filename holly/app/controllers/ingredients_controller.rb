@@ -27,7 +27,7 @@ class IngredientsController < ApplicationController
 
     def update
       @ingredient = Ingredient.find(params[:id])
-      if @ingredient.update(find_params)
+      if @ingredient.update(ingredient_params)
         redirect_to ingredients_show_path(@ingredient)
       else
         render 'edit'
@@ -55,7 +55,7 @@ class IngredientsController < ApplicationController
     private
 
     def ingredient_params
-      params.require(:ingredient).permit(:name, :preparation)
+      params.require(:ingredient).permit(:name)
     end
 
   end

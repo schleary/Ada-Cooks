@@ -1,9 +1,12 @@
-REC SHOW
+<h1><%= @recipe.title %></h1>
 
-<h4><%= @recipe.title %></h4>
-
-<img src="<%= @recipe.image %>" height = 100px>
+<img src="<%= @recipe.image %>" height = 200px>
 <%= @recipe.directions %>
+<br>
+<% @recipe.ingredients.each do |f| %>
+<%= f.name %>
+<br>
+<% end %>
 
 <%= link_to "Edit", recipes_edit_path(@recipe), class:"btn btn-default" %> &nbsp
 <%= link_to "DELETE", recipes_destroy_path(@recipe), class: "btn btn-danger" %>
