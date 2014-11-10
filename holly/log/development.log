@@ -18302,3 +18302,1956 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 18:28:07
 
 
 Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 18:28:07 -0800
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.1ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mMeasurement Load (0.4ms)[0m  SELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 1  ORDER BY "measurements"."id" ASC LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mMeasurement Load (0.3ms)[0m  [1mSELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 4  ORDER BY "measurements"."id" ASC LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:42 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 19:47:54 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "ingredients"=>["1", "2", "4"], "measurements"=>["asdfas", "", "", "asdfsa", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[35mRecipe Load (1.0ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 84]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 85]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 03:47:54.952589"], ["ingredient_id", 1], ["quantity", "asdfas"], ["recipe_id", 35], ["updated_at", "2014-11-10 03:47:54.952589"]]
+  [1m[35m (7.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 03:47:54.962110"], ["ingredient_id", 2], ["quantity", ""], ["recipe_id", 35], ["updated_at", "2014-11-10 03:47:54.962110"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 03:47:54.964431"], ["ingredient_id", 4], ["quantity", "asdfsa"], ["recipe_id", 35], ["updated_at", "2014-11-10 03:47:54.964431"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.35
+Completed 302 Found in 33ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/recipes.35" for 127.0.0.1 at 2014-11-09 19:47:54 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:55 -0800
+
+
+Started GET "/recipes/35" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  Rendered recipes/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:56 -0800
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36mIngredient Load (1.0ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 1  ORDER BY "measurements"."id" ASC LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mMeasurement Load (0.3ms)[0m  [1mSELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 2  ORDER BY "measurements"."id" ASC LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mMeasurement Load (0.6ms)[0m  SELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 4  ORDER BY "measurements"."id" ASC LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 69ms (Views: 62.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:47:59 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 19:54:39 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["asdfas", "", "", "asdfsa", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.4ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 86]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 87]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 88]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/forms/recipe_form.rb:26:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.1ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:48 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "the", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[36mRecipe Load (2.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 03:54:55.512883"], ["ingredient_id", 5], ["quantity", "the"], ["recipe_id", 35], ["updated_at", "2014-11-10 03:54:55.512883"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.35
+Completed 302 Found in 14ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/recipes.35" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+Processing by RecipesController#index as 
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:55 -0800
+
+
+Started GET "/recipes/35" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  Rendered recipes/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:57 -0800
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.3ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mIngredient Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mMeasurement Load (0.3ms)[0m  [1mSELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 5  ORDER BY "measurements"."id" ASC LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.5ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 68ms (Views: 62.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:54:59 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "the", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"stuff", "image"=>"http://placekitten.com/g/200/3001"}, "commit"=>"Save", "id"=>"35"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.1ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 89]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 03:58:31.213772"], ["ingredient_id", 5], ["quantity", "the"], ["recipe_id", 35], ["updated_at", "2014-11-10 03:58:31.213772"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.35
+Completed 302 Found in 32ms (ActiveRecord: 15.8ms)
+
+
+Started GET "/recipes.35" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+Processing by RecipesController#index as 
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:31 -0800
+
+
+Started GET "/recipes/35" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  Rendered recipes/show.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:33 -0800
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.5ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 5  ORDER BY "measurements"."id" ASC LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 62ms (Views: 55.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 19:58:36 -0800
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.3ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mIngredient Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 5  ORDER BY "measurements"."id" ASC LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 78ms (Views: 56.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:04:39 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:04:45 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "the", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[35mRecipe Load (0.8ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (1.1ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35m (2.3ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 90]]
+  [1m[35m (2.9ms)[0m  COMMIT
+Completed 500 Internal Server Error in 26ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/forms/recipe_form.rb:25:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:10:25 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "the", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `save' for #<Class:0x007fc0788d6f90>):
+  app/forms/recipe_form.rb:25:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:13:51 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "the", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.1ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+Completed 500 Internal Server Error in 11ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/forms/recipe_form.rb:25:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:14:36 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "the", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.1ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+Completed 500 Internal Server Error in 13ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/forms/recipe_form.rb:25:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 20:15:46 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 75ms (Views: 60.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:15:47 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:15:53 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "directions"=>"stuffhere", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.1ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "recipes" SET "directions" = $1, "image" = $2, "title" = $3, "updated_at" = $4 WHERE "recipes"."id" = 35  [["directions", nil], ["image", nil], ["title", nil], ["updated_at", "2014-11-10 04:15:53.604877"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 16ms
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/forms/recipe_form.rb:27:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["3"], "directions"=>"stuffhere", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[35mRecipe Load (1.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 04:16:04.659789"], ["ingredient_id", 3], ["quantity", ""], ["recipe_id", 35], ["updated_at", "2014-11-10 04:16:04.659789"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.35
+Completed 302 Found in 26ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/recipes.35" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+Processing by RecipesController#index as 
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:04 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:07 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognishes", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["3"], "directions"=>"stuffhere", "image"=>"http://placekitten.com/g/200/300"}, "commit"=>"Save", "id"=>"35"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mMeasurement Load (0.1ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 35]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 91]]
+  [1m[35m (6.6ms)[0m  COMMIT
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 04:16:26.870524"], ["ingredient_id", 3], ["quantity", ""], ["recipe_id", 35], ["updated_at", "2014-11-10 04:16:26.870524"]]
+  [1m[35m (5.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.35
+Completed 302 Found in 20ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/recipes.35" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:26 -0800
+
+
+Started GET "/recipes" for 127.0.0.1 at 2014-11-09 20:16:28 -0800
+Processing by RecipesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:29 -0800
+
+
+Started GET "/recipes" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+Processing by RecipesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:31 -0800
+
+
+Started GET "/recipes/35" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  Rendered recipes/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:32 -0800
+
+
+Started GET "/recipes/35/edit" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.4ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mMeasurement Load (0.5ms)[0m  SELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 3  ORDER BY "measurements"."id" ASC LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 35]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 35]]
+  Rendered recipes/edit.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 63ms (Views: 58.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:34 -0800
+
+
+Started PATCH "/recipes/35" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Carrot Stew", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["3"], "directions"=>"", "image"=>""}, "commit"=>"Save", "id"=>"35"}
+  [1m[36mRecipe Load (4.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mMeasurement Load (1.0ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 35]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 92]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 04:16:41.372817"], ["ingredient_id", 3], ["quantity", ""], ["recipe_id", 35], ["updated_at", "2014-11-10 04:16:41.372817"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.35
+Completed 302 Found in 36ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/recipes.35" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+Processing by RecipesController#index as 
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.6ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:41 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mRecipe Load (1.5ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:43 -0800
+
+
+Started GET "/recipes/36/edit" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mMeasurement Load (0.1ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Load (0.7ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 36]]
+  Rendered recipes/edit.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:44 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"CS", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (1.3ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 04:16:49.754995"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:16:49.754995"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 17ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (3.4ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 60ms (Views: 56.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:49 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:52 -0800
+
+
+Started GET "/recipes/36/edit" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.4ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mMeasurement Load (0.3ms)[0m  SELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 5  ORDER BY "measurements"."id" ASC LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 36]]
+  Rendered recipes/edit.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 61ms (Views: 54.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:53 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"CS", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[36mRecipe Load (4.0ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.4ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 94]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mRecipe Load (0.9ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 04:16:58.165484"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:16:58.165484"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 31ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+Processing by RecipesController#index as 
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.5ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:16:58 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"CS", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[35mRecipe Load (3.5ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 95]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 04:17:31.753751"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:17:31.753751"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 24ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:31 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:17:32 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:17:33 -0800
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 115ms (Views: 109.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:00 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:19:01 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 95ms (Views: 89.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:01 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:02 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:02 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:02 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:02 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:02 -0800
+
+
+Started GET "/recipes/36/edit" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.1ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35mIngredient Exists (0.2ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.3ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.3ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.5ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.5ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mMeasurement Load (0.3ms)[0m  SELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 5  ORDER BY "measurements"."id" ASC LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 36]]
+  Rendered recipes/edit.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 84ms (Views: 73.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:10 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"Stir it", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.2ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 96]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 04:19:23.502680"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:19:23.502680"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 20ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+Processing by RecipesController#index as 
+  [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.6ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:23 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 63ms (Views: 53.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:39 -0800
+
+
+Started GET "/recipes/36/edit" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mMeasurement Load (0.5ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mIngredient Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 1 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 2 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 3 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 4 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mIngredient Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 5 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mMeasurement Load (0.3ms)[0m  [1mSELECT  "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1 AND "measurements"."ingredient_id" = 5  ORDER BY "measurements"."id" ASC LIMIT 1[0m  [["recipe_id", 36]]
+  [1m[35mIngredient Exists (0.1ms)[0m  SELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1  [["recipe_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1 AND "ingredients"."id" = 6 LIMIT 1[0m  [["recipe_id", 36]]
+  Rendered recipes/edit.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 77ms (Views: 60.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:40 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:19:50 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"Str it", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 97]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36mRecipe Load (0.8ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 04:19:50.876170"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:19:50.876170"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 28ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:19:50 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.5ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 123ms (Views: 120.9ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"Str it", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.1ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 98]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 04:19:51.070518"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:19:51.070518"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 19ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+Processing by RecipesController#index as 
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:19:51 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"Str it", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mMeasurement Load (0.2ms)[0m  [1mSELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "measurements" WHERE "measurements"."id" = $1[0m  [["id", 99]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36mRecipe Load (0.5ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-10 04:21:02.404712"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:21:02.404712"]]
+  [1m[35m (4.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 63ms (ActiveRecord: 20.5ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+Processing by RecipesController#index as 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (1.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered recipes/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:21:02 -0800
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:21:44 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"Str it", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.5ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "measurements" WHERE "measurements"."id" = $1  [["id", 100]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: recipe):
+  app/forms/recipe_form.rb:28:in `update'
+  app/controllers/recipes_controller.rb:35:in `update'
+
+
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hollyleary/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started PATCH "/recipes/36" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZ8KD7zJsITWBM7AR6ci4scUjU670voPfvrXMZQoynM=", "recipe"=>{"title"=>"Boognish", "measurements"=>["", "", "", "", "", ""], "ingredients_index"=>["1", "2", "3", "4", "5", "6"], "ingredients"=>["5"], "directions"=>"Str it", "image"=>""}, "commit"=>"Save", "id"=>"36"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mMeasurement Load (0.1ms)[0m  SELECT "measurements".* FROM "measurements"  WHERE "measurements"."recipe_id" = $1  [["recipe_id", 36]]
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "recipes" SET "directions" = $1, "image" = $2, "title" = $3, "updated_at" = $4 WHERE "recipes"."id" = 36[0m  [["directions", "Str it"], ["image", ""], ["title", "Boognish"], ["updated_at", "2014-11-10 04:22:24.740290"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "measurements" ("created_at", "ingredient_id", "quantity", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-11-10 04:22:24.753697"], ["ingredient_id", 5], ["quantity", ""], ["recipe_id", 36], ["updated_at", "2014-11-10 04:22:24.753697"]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes.36
+Completed 302 Found in 37ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/recipes.36" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+Processing by RecipesController#index as 
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:24 -0800
+
+
+Started GET "/recipes/36" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "measurements" ON "ingredients"."id" = "measurements"."ingredient_id" WHERE "measurements"."recipe_id" = $1[0m  [["recipe_id", 36]]
+  Rendered recipes/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/ingredients.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/ingredients.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 20:22:26 -0800

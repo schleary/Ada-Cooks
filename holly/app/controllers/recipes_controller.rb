@@ -53,15 +53,6 @@ class RecipesController < ApplicationController
     redirect_to recipes_path(@recipe)
   end
 
-  def upvote
-    @recipe = Recipe.find(params[:id])
-    if @recipe.save
-      redirect_to recipes_show_path(@recipe)
-    else
-      render 'show'
-    end
-  end
-
   private
 
   def recipe_params
