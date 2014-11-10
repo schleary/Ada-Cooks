@@ -6,4 +6,6 @@
     <%= ingredient.text_field :name, class: "form-control" %>
   </div>
   <%= ingredient.submit "Save", class: "btn btn-default" %>
+  <%= link_to "Delete", ingredients_destroy_path(@ingredient), class: "btn btn-danger" %><br>
+
 <% end %>

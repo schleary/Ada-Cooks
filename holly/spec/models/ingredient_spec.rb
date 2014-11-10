@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Recipe" do
+describe "Ingredient" do
 
 
 end

@@ -10,7 +10,7 @@ class RecipeForm
 
   def save
     puts "We're here!"
-    puts @attributes[:recipe][:title].inspect
+    puts @attributes.inspect
     @recipe = Recipe.create(title: @attributes[:recipe][:title], directions: @attributes[:recipe][:directions], image: @attributes[:recipe][:image])
     puts @recipe.inspect
     @attributes[:recipe][:ingredients].each do |id|
