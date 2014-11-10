@@ -1,14 +1,16 @@
 <h1><%= @recipe.title %></h1>
 
 <img src="<%= @recipe.image %>" height = 200px>
+<h4>Ingredients: </h4>
+<% @recipe.measurements.each do |m| %>
+  <%= m.quantity %>
+  <%= m.ingredient.name %>
+  <br>
+<% end %>
+
 <h4>Directions:</h4>
 <%= @recipe.directions %>
-<br>
-<h4>Ingredients:</h4>
-<% @recipe.ingredients.each do |f| %>
-<li><%= f.name %></li>
-<br>
-<% end %>
+
 <br>
 <%= link_to "Edit", recipes_edit_path(@recipe), class:"btn btn-default" %> &nbsp
 <%= link_to "DELETE", recipes_destroy_path(@recipe), class: "btn btn-danger" %>

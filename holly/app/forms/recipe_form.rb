@@ -9,9 +9,14 @@ class RecipeForm
   end
 
   def save
-    @recipe = Recipe.create(title: @attributes[:title], directions: @attributes[:directions], image: @attributes[:image])
-    @attributes[:ingredients].each do |id|
-      Measurement.create(ingredient_id: id, recipe_id: @recipe.id)
+    puts "We're here!"
+    puts @attributes[:recipe][:title].inspect
+    @recipe = Recipe.create(title: @attributes[:recipe][:title], directions: @attributes[:recipe][:directions], image: @attributes[:recipe][:image])
+    puts @recipe.inspect
+    @attributes[:recipe][:ingredients].each do |id|
+      measurement_index = @attributes[:recipe][:ingredients_index].find_index(id)
+      puts @attributes[:recipe][:measurements][measurement_index]
+      Measurement.create(ingredient_id: id, recipe_id: @recipe.id, quantity: @attributes[:recipe][:measurements][measurement_index])
       # , preparation: preparation, quantity: quantity, unit: unit
     end
     # @recipe.valid?
@@ -22,15 +27,10 @@ class RecipeForm
     @recipe.measurements.each do |measurement|
       measurement.destroy
     end
-    puts "&&&&&&&&&&&"
-    puts @attributes.inspect
-    puts "&&&&&&&&&&&"
     @recipe = Recipe.update(@recipe.id, {title: @attributes[:recipe][:title], directions: @attributes[:recipe][:directions], image: @attributes[:recipe][:image]})
     # put a check here
     @attributes[:recipe][:ingredients].each do |id|
       measurement_index = @attributes[:recipe][:ingredients_index].find_index(id)
-      #@attributes[:recipe][:measurements][measurement_index]
-      puts "Wow"
       puts @attributes[:recipe][:measurements][measurement_index]
       Measurement.create(ingredient_id: id, recipe_id: @recipe.id, quantity: @attributes[:recipe][:measurements][measurement_index])
       # , preparation: preparation, quantity: quantity, unit: unit

@@ -12,6 +12,8 @@
   <% Ingredient.all.each do |ingredient| %>
     <%= check_box_tag "recipe[ingredients][]", ingredient.id, (@recipe.ingredients.include? ingredient), id: "ingredient_#{ingredient.id}" %>
     <%= label_tag "ingredient_#{ingredient.id}", "#{ingredient.name}" %>
+    &nbsp&nbsp
+    Quantity:
     <% if @recipe.ingredients.include? ingredient %>
       <input type="text" name="recipe[measurements][]" value=<%="#{@recipe.measurements.where(ingredient_id: ingredient.id).first.quantity}"%>>
     <% else %>

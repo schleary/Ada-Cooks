@@ -9,7 +9,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-    @recipe_form = RecipeForm.new(params[:recipe_form])
+    @recipe_form = RecipeForm.new(params)
     if @recipe_form.save
       redirect_to recipes_path(@recipe_form.recipe.id)
     else
@@ -27,24 +27,12 @@ class RecipesController < ApplicationController
   end
 
   def update
-    #@recipe = Recipe.find(params[:id])
-    puts "*****************"
-    puts "GOT HERE"
-    #@recipe.destroy
     @recipe_form = RecipeForm.new(params)
     if @recipe_form.update
       redirect_to recipes_path(@recipe_form.recipe.id)
     else
       render :back
     end
-    # puts params.inspect
-    # # ************
-    # @recipe = Recipe.find(params[:id])
-    # if @recipe.update(recipe_params)
-    #   redirect_to recipes_show_path(@recipe)
-    # else
-    #   render 'edit'
-    # end
   end
 
   def destroy
