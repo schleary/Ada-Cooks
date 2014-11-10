@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get	    "/ingredients/:id",          to:	"ingredients#show",    as: :ingredients_show
   get	    "/ingredients/:id/edit",     to:	"ingredients#edit",    as: :ingredients_edit
   patch	  "/ingredients/:id",          to:	"ingredients#update",  as: :ingredients_update
-  get     "/ingredients/:id/delete",   to: "ingredients#destroy", as: :ingredients_destroy
+  get     "/ingredients/:id/delete",   to:  "ingredients#destroy", as: :ingredients_destroy
   delete  "/ingredients/:id",          to:	"ingredients#destroy", as: :ingredients_delete
 
   # measurements routes

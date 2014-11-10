@@ -10,9 +10,8 @@ class RecipesController < ApplicationController
 
   def create
     @recipe_form = RecipeForm.new(params[:recipe_form])
-    @recipe_form.inspect
     if @recipe_form.save
-      redirect_to recipes_path(@recipe_form.recipe.id), notice: 'Recipe was successfully created.'
+      redirect_to recipes_path(@recipe_form.recipe.id)
     else
       render :new
     end
@@ -24,15 +23,28 @@ class RecipesController < ApplicationController
 
   def edit
     @recipe = Recipe.find(params[:id])
+    puts @recipe.measurements.inspect
   end
 
   def update
-    @recipe = Recipe.find(params[:id])
-    if @recipe.update(recipe_params)
-      redirect_to recipes_show_path(@recipe)
+    #@recipe = Recipe.find(params[:id])
+    puts "*****************"
+    puts "GOT HERE"
+    #@recipe.destroy
+    @recipe_form = RecipeForm.new(params)
+    if @recipe_form.update
+      redirect_to recipes_path(@recipe_form.recipe.id)
     else
-      render 'edit'
+      render :back
     end
+    # puts params.inspect
+    # # ************
+    # @recipe = Recipe.find(params[:id])
+    # if @recipe.update(recipe_params)
+    #   redirect_to recipes_show_path(@recipe)
+    # else
+    #   render 'edit'
+    # end
   end
 
   def destroy
@@ -49,9 +61,6 @@ class RecipesController < ApplicationController
       render 'show'
     end
   end
-
-
-
 
   private
 

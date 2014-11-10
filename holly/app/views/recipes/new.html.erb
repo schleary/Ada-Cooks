@@ -12,13 +12,19 @@
 
       <%= check_box_tag "recipe_form[ingredients][]", ingredient.id, false, id: "ingredient_#{ingredient.id}" %>
       <%= label_tag "ingredient_#{ingredient.id}", "#{ingredient.name}" %>
+<!--
+      <%= label_tag "recipe_form[ingredients][ingredient.id][]", "Preparation" %>
+      <%= text_field_tag "recipe_form[ingredients][ingredient.id][]" %>
 
-      <!-- Here we nest another form_tag? -->
+      <%= label_tag "recipe_form[title]", "Quantity" %>
+      <%= text_field_tag "recipe_form[ingredients][ingredient.id][]" %>
 
-
+      <%= label_tag "recipe_form[title]", "Units" %>
+      <%= text_field_tag "recipe_form[ingredients][ingredient.id][]" %> -->
 
       <br>
     <% end %>
+
 
   <%= label_tag "recipe_form[ingredient][name]", "New Ingredient" %> <br>
   <%= text_field_tag "recipe_form[ingredient][name]" %> <br>

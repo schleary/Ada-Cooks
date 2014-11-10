@@ -8,9 +8,17 @@
   </div>
 
   <%= label_tag "Ingredients:" %>
+  <br>
   <% Ingredient.all.each do |ingredient| %>
-    <%= check_box_tag "recipe_form[ingredients][]", ingredient.id, id: "ingredient_#{ingredient.id}" %>
+    <%= check_box_tag "recipe[ingredients][]", ingredient.id, (@recipe.ingredients.include? ingredient), id: "ingredient_#{ingredient.id}" %>
     <%= label_tag "ingredient_#{ingredient.id}", "#{ingredient.name}" %>
+    <% if @recipe.ingredients.include? ingredient %>
+      <input type="text" name="recipe[measurements][]" value=<%="#{@recipe.measurements.where(ingredient_id: ingredient.id).first.quantity}"%>>
+    <% else %>
+      <input type="text" name="recipe[measurements][]">
+    <% end %>
+    <input type="hidden" name="recipe[ingredients_index][]" value=<%="#{ingredient.id}"%>>
+    <br>
   <% end %>
 
   <div class="form-group">

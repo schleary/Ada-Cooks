@@ -1,15 +1,14 @@
-RECIPES INDEX
+<h1>ALL RECIPES</h1>
 
 <% if @recipes.any?%>
   <% @recipes.each do |recipe| %>
-    <%= recipe.image %>
-    <h2><%= link_to recipe.title, recipes_show_path(recipe) %>
-    <small><%= link_to recipe.directions, recipes_show_path(recipe) %></small>
-    </h2>
+    <h2><%= link_to recipe.title, recipes_show_path(recipe) %></h2>
+    <img src="<%= recipe.image %>" height = 200px>
+
   <% end %>
     </br>
   <%= link_to "View More recipes", recipes_path %>
   <% else %>
-    Oops... There are not recipes yet,
-    <%= link_to "add one.", recipes_new_path %>
+    There aren't any recipes yet.
+    <%= link_to "Add one.", recipes_new_path %>
 <% end %>
